@@ -20,11 +20,10 @@ export default class Globe {
         this.objectDistance = 300
     }
 
-    // './ne_110m_admin_0_countries.geojson'
-
     setGlobe() {
         fetch(
-            '.https://github.com/xtiandirige/wts-about/blob/1f4e47d303f4822db70db66ee8d89a57638104d0/dist/ne_110m_admin_0_countries.geojson'
+            'https://cdn.jsdelivr.net/gh/xtiandirige/wts-about/dist/ne_110m_admin_0_countries.json'
+            // './ne_110m_admin_0_countries.json'
         ).then(res => res.json()).then(countries => {
             this.globe = new threeGlobe()
                 .globeImageUrl('./transparent_photo.png')
