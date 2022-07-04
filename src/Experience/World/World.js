@@ -10,16 +10,18 @@ export default class World {
         this.scene = this.experience.scene
         this.sizes = this.experience.sizes
         this.camera = this.experience.camera
-        this.resources = this.experience.resources
+        // this.resources = this.experience.resources
 
+        this.globe = new Globe()
+        this.environment = new Environment()
         // Wait for resources
-        this.resources.on('ready', () => {
-            // Setup
-            // this.floor = new Floor()
-            this.globe = new Globe()
-            // this.fox = new Fox()
-            this.environment = new Environment()
-        })
+        // this.resources.on('ready', () => {
+        //     // Setup
+        //     // this.floor = new Floor()
+        //     this.globe = new Globe()
+        //     // this.fox = new Fox()
+        //     this.environment = new Environment()
+        // })
 
     }
 
