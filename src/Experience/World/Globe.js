@@ -26,7 +26,7 @@ export default class Globe {
             // './ne_110m_admin_0_countries.json'
         ).then(res => res.json()).then(countries => {
             this.globe = new threeGlobe()
-                .globeImageUrl('./transparent_photo.png')
+                .globeImageUrl('https://cdn.jsdelivr.net/gh/xtiandirige/wts-about/dist/transparent_photo.png')
                 .polygonsData(countries.features.filter(d => d.properties.ISO_A2 !== 'AQ'))
                 .polygonCapColor(() => 'rgba(255, 255, 255, 0.2)')
                 .polygonSideColor(() => 'rgba(255, 255, 255, 0.1)')

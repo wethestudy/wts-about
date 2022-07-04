@@ -9,7 +9,7 @@ module.exports = {
     {
         hashFunction: 'xxhash64',
         // filename: 'bundle.[contenthash].js',
-        filename: 'wts-about-V3.js',
+        filename: 'wts-about-V4.js',
         library: "wts",
         libraryTarget: "umd",
         path: path.resolve(__dirname, '../dist')
